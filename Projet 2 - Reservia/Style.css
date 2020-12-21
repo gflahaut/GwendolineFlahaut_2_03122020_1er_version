@@ -73,14 +73,21 @@ header{
     background-color: #FFF;
     border-radius: 1rem 0 0 1rem;
     text-align: center;
+    padding: 10px;
+}
+i.fas.fa-map-marker-alt{
+    background-color: #F2F2F2;
+    padding: 15px;
+
 }
 #v_cp{
-    height: 7vh;
+    height: 7.5vh;
     position: relative;
     left: -0.4vw;
     bottom: 0.2vh;
-    border:none;
-    font-size:1.2rem;   
+    padding-left: 10px;
+    font-size:1.2rem; 
+    border: 1px solid #f2f2f2;  
 }
 button:focus{
     border: none;
@@ -136,12 +143,18 @@ button:hover{
     -webkit-transition : .3s ease-in-out;
     transition: .3s ease-in-out;
 }
-.filtres div i, .filtres div p{
+ .filtres div i, .filtres div p{
     display:inline-block;
-    border-top: 1px solid #F2F2F2;
-    border-bottom: 1px solid #F2F2F2;
-    border-right: 1px solid #F2F2F2;
-    
+    position: relative; 
+    top: -1.2em;
+}
+#eco,#famille,#romantique,#animaux{
+    border-radius: 30px;
+    border: 1px solid #F2F2F2;
+    height: 2em;
+    position: relative;
+    top: 1em;
+    margin-right: 1em;
 }
 .filtres div i {
     background-color: #DEEBFF ;
@@ -174,6 +187,7 @@ button:hover{
 }
 .info p{
     display: inline-block;
+    padding : 15px;
 }
 i.fas.fa-info{ 
     color: #0065FC;
@@ -189,13 +203,28 @@ i.fas.fa-star.grey{
     background-color: #F2F2F2;
     display: grid;
     grid-template-columns : 2fr 2fr 2fr;
-    grid-template-rows: 0.2fr 0.2fr 0.2fr;
-    grid-column-gap:2fr;
-    grid-row-gap: 2fr;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr;
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+    margin-inline-end: 40px;
+    border-radius: 1rem;
+    padding: 2em;
+}
+#containerHebergements h4{
+    grid-row-start: 1;
+    grid-column: span 3;
 }
 #containerHebergements a{ 
     color: inherit;
     text-decoration: none;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+#containerHebergements a:hover{
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
 }
 #containerHebergements img{
     height: 8rem;
@@ -215,24 +244,210 @@ i.fas.fa-star.grey{
     display: grid;
     grid-template-columns: 7fr 3fr;
     grid-column-gap:0.2fr;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 40px;
-    margin-inline-end: 40px;
+}
+.cartesHebergements{
+    background-color: white;
+    width: 16em;
+    border-radius: 1rem;
+    padding-bottom: 10px;
+    border: 5px solid white;
+    box-shadow: 0 0 16px #0000002e;
+}
+
+/* Populaires  */
+#containerPopulaires p{
+    font-size: 1em;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 #containerPopulaires img{
     height: 8rem;
-    width: 10rem;
+    width: 8rem;
     object-fit: cover;
     border-radius: 1rem 1rem 0 0;
 }
 #containerPopulaires a{
     text-decoration: none;
 }
+ul{
+    list-style-type: none;
+}
+#containerPopulaires{
+    background-color: #F2F2F2;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns : 1fr;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr;
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+    padding: 1em;
+}
+.cartesPopulaires{
+    height: 8rem;
+    width: 19.5em;
+    background-color: white;
+    border-radius: 1rem;
+    padding-bottom: 10px;
+    border: 5px solid white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 0 16px #0000002e;
+    font-size: 14px;
+}
+.cartesPopulaires p{
+    display: inline-block;
+}
+i.fas.fa-chart-line{
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    float: right;
+}
+#containerPopulaires h4{
+    display: inline-block;
+}
+#containerPopulaires a{
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+#containerPopulaires a:hover{
+    -webkit-transform: scale(0.75);
+	transform: scale(0.75);
+}
 
+/* Activités  */
 #containerActivites a{
     text-decoration: none;
 }
-ul{
-    list-style-type: none;
+#containerActivites{
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr;
+    grid-template-rows: auto 0.5fr 0.5fr;
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+    grid-auto-flow: row;
+}
+#containerActivites h4, div#titleA{
+    grid-row-start: 1;
+    grid-column: 1 / span 4;
+}
+#containerActivites img{
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+#containerActivites p{
+    padding: 10px;
+}
+#A1{
+    grid-column: 1;
+    grid-row: 2 / 3;
+}
+#A2{
+    grid-column:2;
+    grid-row: 2;
+}
+#A3{
+    grid-column: 2;
+    grid-row: 3;
+}
+#A4{
+    grid-column: 3;
+    grid-row: 2 / 3;
+}
+#A5{
+    grid-column: 4;
+    grid-row: 2;
+}
+#A6{
+    grid-column: 4;
+    grid-row: 3;
+}
+.bigActivity{
+    height: 26rem;
+    width: 20rem;
+}
+.smallActivity{
+    height: 9rem;
+    width: 18rem;
+}
+#A2,#A5,#A6{
+    background-color: white;
+    width: 18rem;
+    border-radius: 1rem;
+    padding-bottom: 10px;
+    border-bottom: 5px solid white;
+    box-shadow: 0 0 16px #0000002e;
+}
+#A1,#A4{
+    background-color: white;
+    width: 20rem;
+    border-radius: 1rem;
+    padding-bottom: 10px;
+    border-bottom: 5px solid white;
+    box-shadow: 0 0 16px #0000002e;
+}
+.activitySmall{
+    display: grid;
+    grid-template-columns : auto;
+    grid-template-rows: auto auto;
+    grid-column-gap: 1em;
+    grid-row-gap: 2.5em;
+
+}
+#A3 img{
+    height:7rem;
+}
+div#A3.activity {
+    background-color: white;
+    width: 18rem;
+    border-radius: 1rem;
+    padding-bottom: 5px;
+    border-bottom: 5px solid white;
+    box-shadow: 0 0 16px #0000002e;
+    
+}
+div#A3.activity p{
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+#containerActivites a{
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+#containerActivites a:hover{
+    -webkit-transform: scale(0.75);
+	transform: scale(0.75);
+}
+footer{
+    background-color: #F2F2F2;
+}
+footer ul {
+    display: inline-block;
+}
+footer a{
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+    column-wrap
+    
+}
+li.bold{
+    display: grid;
+    grid-template-columns: repeat;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
