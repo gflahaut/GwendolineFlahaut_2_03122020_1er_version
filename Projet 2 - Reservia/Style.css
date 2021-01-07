@@ -3,7 +3,6 @@ body {
     font-family: "Raleway", "Sans serif";
     margin: 0;
     padding: 0;
-    /* min-height: 100vh; */
 }
 a, .menuLink {
     color: black;
@@ -165,7 +164,7 @@ button#mobile{
 #eco,#famille,#romantique,#animaux{
     border-radius: 30px;
     border: 1px solid #F2F2F2;
-    height: 26px;
+    height: 3.95vh;
     position: relative;
     top: 0em;
     margin-right: 0em;
@@ -439,7 +438,7 @@ div#A3 {
     background-color: white;
     width: 18rem;
     border-radius: 1rem;
-    padding-bottom: 5px;
+    padding-bottom: 0.37vw;
     border-bottom: 5px solid white;
     box-shadow: 0 0 16px #0000002e;
     margin-top: 5.5vh;    
@@ -466,7 +465,6 @@ footer{
     display: grid;
     grid-template-columns : 2fr 2fr 2fr;
     grid-template-rows: 1fr;
-    /* height: 20vh; */
     right: 0;
     bottom: 0;
     left: 0;
@@ -524,6 +522,7 @@ footer a:hover{
     }
     section#container{
         padding-left: 3.04vh;
+        margin-bottom: 1em;
     }
     section#container p{
         margin-block-start: 1em;
@@ -578,7 +577,7 @@ footer a:hover{
         top: 0;
         margin-right: 0;
     }
-    .info p{
+    section#container .info p{
         padding: 0;
         margin: 0;
         font-size: small;
@@ -603,7 +602,7 @@ footer a:hover{
     #hebergements{
         width: 95%;
         grid-template-columns: 100%;
-        grid-template-rows: 65% 30%;
+        grid-template-rows: 60% 30%;
         padding: 2vw;
     }
     #containerHebergements,#containerPopulaires{
@@ -614,17 +613,9 @@ footer a:hover{
         grid-column-start: 1;
         grid-template-columns: repeat(3,30%);
         grid-template-rows: 5% repeat(2, 32%) 5%;
-        grid-column-gap: 0.5em;
+        grid-column-gap: 2.5em;
         grid-row-gap: 2.5em;
         border-radius: 1rem;
-        padding: 2em;
-        margin-bottom: 4vh;
-        margin-inline-end: 0;
-        padding: 0;
-        padding-left: 4vw;
-        padding-right: 2vw;
-        position: relative;
-        top: -3em;
     }
     #containerHebergements h4{
         grid-column-start: 1;
@@ -659,10 +650,8 @@ footer a:hover{
         grid-template-columns: repeat(3, 30%);
         grid-template-rows: 10% 65%;
         gap: 2em;
-        padding: 1vw;
-        margin-block-start: -5em;
+        grid-column-gap: 2.5em;
         position: relative;
-        top: -5em;
     }
     #containerPopulaires img {
         height: 6em;
@@ -673,12 +662,6 @@ footer a:hover{
         grid-column-start: 1;
         grid-column: span 3;
         grid-row-start: 1;
-        margin-inline-start: 4em;
-        margin-bottom: 6vh;
-    }
-    #containerPopulaires a{
-        padding-left: 3.5vw;
-        padding-right: 2.5vw;
     }
     #containerPopulaires a:hover {
         -webkit-transform: none;
@@ -695,8 +678,6 @@ footer a:hover{
     }
     section#Activites{
         position: relative;
-        top: -9em;
-        padding: 2vw;
     }
     #containerActivites{
         width: 100%;
@@ -704,6 +685,7 @@ footer a:hover{
         grid-template-rows: 5% 10%;
         grid-column-gap: 1em;
         grid-row-gap: 0.5em;
+        grid-column-gap: 1em;
     }
     #containerActivites a:hover {
         -webkit-transform: none;
@@ -738,7 +720,6 @@ footer a:hover{
     div#titleA{
         display: flex;
         align-items: center;
-        margin-block-start: -1.65em;
     }
     .activitySmall{
         display: grid;
@@ -750,9 +731,7 @@ footer a:hover{
     footer{
         width: 100%;
         grid-column-gap: 2em;
-        padding-bottom: 1vh;
-        height: 0;
-        min-height: 40vh;
+        min-height: 20vh;
     }
 }
     
@@ -773,12 +752,12 @@ footer a:hover{
         grid-column-start: 1;
         grid-row-start: 1;
         top: 2vh;
-        padding-left: 10px;
+        padding-left: 0.73vw;
     }
     #H{
         grid-column-start: 1;
         grid-row-start: 2;
-        padding-bottom: 10px;
+        padding-bottom: 0.73vw;
         border-bottom: 2px solid #0065FC;
     }
     #A {
@@ -816,35 +795,34 @@ footer a:hover{
     }
     .filtres{
         grid-template-columns: 60% 40%;
-        grid-template-rows: 25% 50% 50% 55%;
-        margin-bottom: 15px;
+        margin-bottom: 1.09vw;
         margin-top: 2em;
         margin-bottom: 2em;
         grid-column-gap: 0.5em;
-        grid-row-gap: 0.2em;
+        grid-row-gap: 1.5em;
     }
     div#eco{
         grid-row-start: 2;
-        width: 155px;
+        width: 11.35vw;
     }
     div#famille{
         grid-row-start: 2;
         grid-column-start: 2;
         position: relative;
-        left:-27px;
+        left:-1.98vw;
     }
     div#romantique{
         grid-row-start: 3;
-        width: 155px;
+        width: 11.35vw;
     }
     div#animaux{
         grid-row-start: 4;
-        width: 195px;
+        width: 14.27vw;
     }
     .info p{
         padding: 0;
         margin: 0;
-        font-size: 11px;
+        font-size: 0.69rem;
     }
     .info{
         position: relative;
@@ -889,8 +867,8 @@ footer a:hover{
     }
     i.fas.fa-chart-line{
         float: right;
-        margin-left: 200px;
-        margin-top: -30.5px;
+        margin-left: 14.64vh;
+        margin-top: -2.23vw;
     }
     #containerPopulaires a{
         margin: auto;
@@ -903,7 +881,7 @@ footer a:hover{
     }
     .stars{
         position: relative;
-        top:35px;
+        top:1.46vw;
     }
     #containerHebergements{
         grid-column-start: 1;
