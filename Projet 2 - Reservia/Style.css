@@ -3,6 +3,7 @@ body {
     font-family: "Raleway", "Sans serif";
     margin: 0;
     padding: 0;
+    /* min-height: 100vh; */
 }
 a, .menuLink {
     color: black;
@@ -82,10 +83,10 @@ header,section#container,section#hebergements,section#Activites{
 }
 i.fas.fa-map-marker-alt{
     background-color: #F2F2F2;
-    padding: 1.5vh;
+    padding: 1.65vh;
 }
 #v_cp{
-    height: 7.5vh;
+    height: 5.55vh;
     position: relative;
     left: -0.4vw;
     bottom: 0.2vh;
@@ -135,7 +136,7 @@ button#mobile{
     font-weight: bold;
     border: none;
     border-radius: 0 1rem 1rem 0;
-    padding: 2vh 2vw;
+    padding: 1.5vh 1vw;
     font-family: "Raleway", "Sans serif";
     font-size: 1.16rem!important;
     cursor: pointer;
@@ -164,10 +165,10 @@ button#mobile{
 #eco,#famille,#romantique,#animaux{
     border-radius: 30px;
     border: 1px solid #F2F2F2;
-    height: 2em;
+    height: 26px;
     position: relative;
-    top: 1em;
-    margin-right: 1em;
+    top: 0em;
+    margin-right: 0em;
 }
 .filtres div i {
     background-color: #DEEBFF ;
@@ -194,7 +195,7 @@ button#mobile{
 .info{
     display: flex;
     align-items: center;
-    margin: 6rem 0 2rem 0;
+    margin:0;
 }
 .i{
     display: inline-block;
@@ -212,6 +213,8 @@ button#mobile{
 .info p{
     display: inline-block;
     padding : 2.5vh;
+    position: relative;
+    left: -1em;
 }
 i.fas.fa-info{ 
     color: #0065FC;
@@ -220,6 +223,7 @@ i.fas.fa-info{
     position: relative;
     top: -0.3vh;
     left: 0.3vh;
+    padding: 0.6em 0.5em 0em 0.7em;
 }
 /* Hébergements */
 i.fas.fa-star{
@@ -462,7 +466,7 @@ footer{
     display: grid;
     grid-template-columns : 2fr 2fr 2fr;
     grid-template-rows: 1fr;
-    height: 20vh;
+    /* height: 20vh; */
     right: 0;
     bottom: 0;
     left: 0;
@@ -476,7 +480,7 @@ footer a{
 footer a:hover{
     text-decoration:underline;
 }
-/* <--Mobiles-->*/
+/* <--Tablettes-->*/
 @media screen and (min-width:768px) and (max-width:1250px){
     html{
         line-height: 1.15;
@@ -494,7 +498,7 @@ footer a:hover{
         grid-column-start: 1;
         grid-row-start: 1;
         top: 2vh;
-        padding-left: 10px;
+        padding-left: 1.52vh;
     }
     #H{
         grid-column-start: 2;
@@ -515,12 +519,11 @@ footer a:hover{
         position: relative;
         left: 0;
         bottom: 0;
-        padding-left: 10px;
+        padding-left: 1.52vh;
         border: none;
-        
     }
     section#container{
-        padding-left: 20px;
+        padding-left: 3.04vh;
     }
     section#container p{
         margin-block-start: 1em;
@@ -543,7 +546,7 @@ footer a:hover{
     .filtres{
         margin-block-start: 2em;
         margin-block-end: 2em;
-        grid-template-columns: 10% 20% 15% 19% 22%;;
+        grid-template-columns: 10% 20% 15% 19% 25%;;
         grid-template-rows: 100%;
         column-gap: 0;
         margin-bottom: 0;
@@ -578,9 +581,10 @@ footer a:hover{
     .info p{
         padding: 0;
         margin: 0;
-        font-size: 1em;
+        font-size: small;
         margin-block-start: 0;
         margin-block-end: 0;
+        margin-inline-start: 1em;
     }
     #txt-filtre{
         grid-column-start: 1;
@@ -590,16 +594,17 @@ footer a:hover{
         margin: 0.5rem 0 1rem 0;
     }
     .i{
-        top:-12px;
+        top:-0.83vh;
     }
     i.fas.fa-info {
-        top: -2px;
-        left: 4px;
+        top: -0.30vh;
+        left: 0.2vh;
     }
     #hebergements{
         width: 95%;
         grid-template-columns: 100%;
         grid-template-rows: 65% 30%;
+        padding: 2vw;
     }
     #containerHebergements,#containerPopulaires{
         background: none;
@@ -608,7 +613,7 @@ footer a:hover{
         width: 96%;
         grid-column-start: 1;
         grid-template-columns: repeat(3,30%);
-        grid-template-rows: 5% repeat(2, 32%) 5% 5%;
+        grid-template-rows: 5% repeat(2, 32%) 5%;
         grid-column-gap: 0.5em;
         grid-row-gap: 2.5em;
         border-radius: 1rem;
@@ -618,6 +623,8 @@ footer a:hover{
         padding: 0;
         padding-left: 4vw;
         padding-right: 2vw;
+        position: relative;
+        top: -3em;
     }
     #containerHebergements h4{
         grid-column-start: 1;
@@ -633,6 +640,7 @@ footer a:hover{
         margin-block-end: 0;
         position: relative;
         top: -2vh;
+        margin-inline-start: 2em;
     }
     #containerHebergements a:hover {
         -webkit-transform: none;
@@ -646,20 +654,20 @@ footer a:hover{
         height: 6rem;
     }
     #containerPopulaires{
-        width: 96%;
+        width: 95%;
         display: grid;
-        grid-template-columns: repeat(3,30%);
-        grid-template-rows: 5% 65%;
-        grid-column-gap: 0;
-        grid-row-gap: 4em;
-        padding: 0;
-        padding-left: 4vw;
-        padding-right: 2vw;
-        margin-block-start: -75px;
+        grid-template-columns: repeat(3, 30%);
+        grid-template-rows: 10% 65%;
+        gap: 2em;
+        padding: 1vw;
+        margin-block-start: -5em;
+        position: relative;
+        top: -5em;
     }
     #containerPopulaires img {
         height: 6em;
         width: 12em;
+        padding: 0;
     }
     #containerPopulaires .titre{
         grid-column-start: 1;
@@ -684,6 +692,11 @@ footer a:hover{
     i.fas.fa-chart-line {
         margin-left: 0;
         background: none;
+    }
+    section#Activites{
+        position: relative;
+        top: -9em;
+        padding: 2vw;
     }
     #containerActivites{
         width: 100%;
@@ -736,11 +749,14 @@ footer a:hover{
     }
     footer{
         width: 100%;
-        grid-column-gap: 1em;
+        grid-column-gap: 2em;
+        padding-bottom: 1vh;
+        height: 0;
+        min-height: 40vh;
     }
 }
     
-   /* <--Tablettes-->*/
+   /* <--Mobiles-->*/
 @media screen and (max-width:767px){
     html{
         line-height: 1.15;
@@ -779,7 +795,7 @@ footer a:hover{
         grid-column-start: 1;
     }
     section#container{
-        padding-left: 20px;
+        padding-left: 3.04vh;
     }
     button#desktop{
         display:none;
@@ -799,11 +815,13 @@ footer a:hover{
         margin-bottom: 1vh;
     }
     .filtres{
-        padding-bottom: 10px;
         grid-template-columns: 60% 40%;
         grid-template-rows: 25% 50% 50% 55%;
-        column-gap: 0.5em;
         margin-bottom: 15px;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        grid-column-gap: 0.5em;
+        grid-row-gap: 0.2em;
     }
     div#eco{
         grid-row-start: 2;
@@ -828,6 +846,10 @@ footer a:hover{
         margin: 0;
         font-size: 11px;
     }
+    .info{
+        position: relative;
+        top: 3em;
+    }
     #txt-filtre{
         grid-column-start: 1;
         grid-row-start: 1;
@@ -837,6 +859,7 @@ footer a:hover{
         display: grid;
         grid-template-columns: 10fr;
         grid-template-rows: 28% 74%;
+        margin-top: 5em;
     }
     #containerHebergements a:hover, #containerPopulaires a:hover, #containerActivites a:hover{
         -webkit-transform: none;
@@ -850,6 +873,7 @@ footer a:hover{
         border-radius: 0;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4,0.1fr);
+        background:none;
     }
     #containerPopulaires img{
         width: 9rem;
